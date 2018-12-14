@@ -8,8 +8,9 @@ Each python script includes a short description at the top, and require various 
 - matplotlib
 - scipy
 
-The data used is contained in the `resources` directory, including the stellar data and relevant Kepler data. 
+The data used is contained in the `resources` directory, including the stellar data and relevant Kepler data. Please cite the relevant papers if you use this data, e.g., Morton et al. 2016 (https://arxiv.org/abs/1605.02825) and Fulton & Petigura 2018 (https://arxiv.org/abs/1805.01453).
 
 Also included is a text file `koipreflist.txt`, which contains a list of every singly transiting KOI which passed the quality cuts described in the paper, it's log likelihood preference for high eccentricity, measured duration, expected circular edge-on duration, and planet radius.
+
 
 
