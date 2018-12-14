@@ -1,3 +1,6 @@
+## See Scipy Cookbook
+##
+
 import numpy as np
 import scipy
 
