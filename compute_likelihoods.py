@@ -555,7 +555,6 @@ for loopi in loopvec:
   #   The mean, axis=0 line weights the draws appropriately (i.e. relative to their frequency)
   #   and the total log-likelihood for all KOIs in koilist is combined and returned
   def compute_duration_likelihood_integral(koilist, esigma, isigma, N, txtstr):
-    #####xxx
     kep_kois, kep_periods, kep_durations, kep_rpors, kep_snrs = get_kepler_transit_durations()
     thesekois = np.nonzero(np.in1d(np.floor(kep_kois), koilist))  
     kep_kois, kep_periods, kep_durations, kep_rpors, kep_snrs = \
@@ -585,7 +584,6 @@ for loopi in loopvec:
     sigma_cosinom = np.sqrt( (1./cosinom * -2 / aors**3 * aors_e)**2 ) 
     minsig=0.003
     sigma_cosinom = np.array([max(min(maxcosi[i]/2, sigma_cosinom[i]), minsig) for i in range(len(sigma_cosinom))])*3*(1. + esigma/0.05)
-  #######
     likelihoods=[]
     weights=[]
     for i in range(N):
